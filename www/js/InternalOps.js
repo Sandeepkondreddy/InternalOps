@@ -226,6 +226,27 @@ function SaveTaskEndDetails(){
 	
 }
 
+SaveBreakdownDetails(){
+	document.getElementById('lblmessage').innerHTML ='Save Truck Breakdown details.';
+	var Adddata = {};
+            //Adddata.TaskCode = $("#txtTaskCode").val();
+            //Adddata.SubTaskCode = $("#txtSubTaskCode").val();
+            Adddata.IMEI = document.getElementById('hidIMEI').value;;
+            Adddata.GeoCoordinates = document.getElementById('geolocation').innerHTML;            
+            Adddata.User = $("#hidusrid").val();
+            $.ajax({
+                type: 'POST',
+                url: 'http://202.83.27.199/RFIDAPI/api/RFIDInternal/BreakdownDetails',				
+                dataType: "json",
+                data: Adddata,
+                success: function (result) {				
+					document.getElementById('lblmessage').innerHTML = 'Breakdown Details Saved Successfully.!';					
+                },
+                error: function (xhr, status, error) {                    
+					document.getElementById('lblmessage').innerHTML ='Error occurred while saving the data.';                    
+                }
+            });
+}
 
 
 //  DB Section-----Start---
@@ -566,7 +587,7 @@ $(document).ready(function () {
 	});
 	
 	$("#btnBreakdown").click(function (){
-		
+		SaveBreakdownDetails();
 	});
 	
 	$("#btnEndTask").click(function (){
