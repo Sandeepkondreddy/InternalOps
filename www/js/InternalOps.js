@@ -565,6 +565,10 @@ $(document).ready(function () {
 		$("#loading").hide();
 	});
 	
+	$("#btnBreakdown").click(function (){
+		
+	});
+	
 	$("#btnEndTask").click(function (){
 		//alert('Hi 2.\n\r');
 		$("#loading").show();
