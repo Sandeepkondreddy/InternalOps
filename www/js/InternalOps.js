@@ -206,7 +206,7 @@ function SaveTaskEndDetails(){
             Adddata.User = $("#hidusrid").val();
             $.ajax({
                 type: 'POST',
-                url: 'http://202.83.27.199/RFIDAPI/api/RFIDInternal/TaskEndDetails',				
+                url: 'http://202.83.27.199/KyTeMobileAPI/api/RFIDInternal/TaskEndDetails',				
                 dataType: "json",
                 data: Adddata,
                 success: function (result) {
