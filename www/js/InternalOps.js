@@ -226,11 +226,13 @@ function SaveTaskEndDetails(){
 	
 }
 
-function SaveBreakdownDetails(){
+function SaveBreakdownDetails(){debugger;
 	document.getElementById('lblmessage').innerHTML ='Save Truck Breakdown details.';
 	var Adddata = {};            
             Adddata.IMEI = document.getElementById('hidIMEI').value;;
-            Adddata.GeoCoordinates = document.getElementById('geolocation').innerHTML;            
+            Adddata.GeoCoordinates = document.getElementById('geolocation').innerHTML; 
+            //Adddata.IMEI = 867634029115001;
+			//Adddata.GeoCoordinates="10,10";			
             Adddata.User = $("#hidusrid").val();
             $.ajax({
                 type: 'POST',
