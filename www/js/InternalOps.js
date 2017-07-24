@@ -226,7 +226,7 @@ function SaveTaskEndDetails(){
 	
 }
 
-SaveBreakdownDetails(){
+function SaveBreakdownDetails(){
 	document.getElementById('lblmessage').innerHTML ='Save Truck Breakdown details.';
 	var Adddata = {};            
             Adddata.IMEI = document.getElementById('hidIMEI').value;;
