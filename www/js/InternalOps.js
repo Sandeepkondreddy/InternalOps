@@ -73,7 +73,7 @@ function SaveGeoCordinateDetails(){
             Adddata.User = $("#hidusrid").val();
             $.ajax({
                 type: 'POST',
-                url: 'http://202.83.27.199/RFIDAPI/api/RFIDInternal/GeoCoordinateDetails',		
+                url: 'http://202.83.27.199/KyTeMobileAPI/api/RFIDInternal/GeoCoordinateDetails',		
                 dataType: "json",
                 data: Adddata,
                 success: function (result) {
@@ -425,7 +425,7 @@ function uploadOfflineData() // Function For Retrive data from Offline Database 
 					 deleteRecord(item['Id']);
 					$.ajax({
 						type: 'POST',
-						url: 'http://202.83.27.199/RFIDAPI/api/RFIDInternal/OfflineTransDetails',
+						url: 'http://202.83.27.199/KyTeMobileAPI/api/RFIDInternal/OfflineTransDetails',
 				//url: 'http://localhost:51594/api/RFIDInternal/OfflineTransDetails',				
 						dataType: "json",
 						data: Adddata,
