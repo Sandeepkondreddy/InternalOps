@@ -228,15 +228,13 @@ function SaveTaskEndDetails(){
 
 SaveBreakdownDetails(){
 	document.getElementById('lblmessage').innerHTML ='Save Truck Breakdown details.';
-	var Adddata = {};
-            //Adddata.TaskCode = $("#txtTaskCode").val();
-            //Adddata.SubTaskCode = $("#txtSubTaskCode").val();
+	var Adddata = {};            
             Adddata.IMEI = document.getElementById('hidIMEI').value;;
             Adddata.GeoCoordinates = document.getElementById('geolocation').innerHTML;            
             Adddata.User = $("#hidusrid").val();
             $.ajax({
                 type: 'POST',
-                url: 'http://202.83.27.199/RFIDAPI/api/RFIDInternal/BreakdownDetails',				
+                url: 'http://202.83.27.199/KyTeMobileAPI/api/RFIDInternal/BreakdownDetails',				
                 dataType: "json",
                 data: Adddata,
                 success: function (result) {				
