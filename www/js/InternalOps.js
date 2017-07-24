@@ -95,12 +95,12 @@ function GetTaskDetails(){
 		var GeoCoordinates01 = document.getElementById('geolocation').innerHTML; 
 		//alert('IMEI:'+imei);	
 		//debugger;	
-		imei=867634029115001;
-		//alert('http://202.83.27.199/RFIDAPI/api/RFIDInternal/GetTaskDetails/'+imei);
+		//imei=867634029115001;
+		//alert('http://202.83.27.199/KyTeMobileAPI/api/RFIDInternal/GetTaskDetails/'+imei);
     if(imei != "")
     {
         $.ajax({ 			
-            url: 'http://202.83.27.199/RFIDAPI/api/RFIDInternal/GetTaskDetails/'+imei,	    
+            url: 'http://202.83.27.199/KyTeMobileAPI/api/RFIDInternal/GetTaskDetails/'+imei,	    
             type: 'GET',
             data: '{}',
             dataType: 'json',
