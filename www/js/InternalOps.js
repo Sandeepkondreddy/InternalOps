@@ -179,7 +179,7 @@ function SaveTripEndDetails(){
             //Adddata.User = 'User';
             $.ajax({
                 type: 'POST',
-                url: 'http://202.83.27.199/RFIDAPI/api/RFIDInternal/TripEndDetails',
+                url: 'http://202.83.27.199/KyTeMobileAPI/api/RFIDInternal/TripEndDetails',
 				//url: 'http://localhost:51594/api/RFIDInternal/TripEndDetails',				
                 dataType: "json",
                 data: Adddata,
