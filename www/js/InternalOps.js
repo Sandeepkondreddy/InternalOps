@@ -145,7 +145,7 @@ function SaveTripStartDetails(){
             //TripStartDetails.User = 'User';
             $.ajax({
                 type: 'POST',
-                url: 'http://202.83.27.199/RFIDAPI/api/RFIDInternal/TripStartDetails',
+                url: 'http://202.83.27.199/KyTeMobileAPI/api/RFIDInternal/TripStartDetails',
 				//url: 'http://localhost:51594/api/RFIDInternal/TripStartDetails',								
                 dataType: "json",
                 data: TripStartDetails,
