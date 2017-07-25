@@ -518,15 +518,7 @@ $(document).ready(function () {
     $("#loading").hide();
     qs();
    initDatabase();
-   
-   //var currentdate = new Date().toLocaleString(); 
-	//	alert(currentdate); debugger;
-	// var n1 =currentdate.split(' ');//109
-	// var n2=n1[0].split('/');	 
-    //    var time = am_pm_to_hours(n1[1]+' '+n1[2]);
-    // var date=n2[2].substr(0, n2[2].length - 1)+'-'+n2[0]+'-'+n2[1] +' '+time;
-	  //debugger;
-	  //alert(getDateTime());
+ 
 	showOfflineRecordsCount();
 	$("#btnStartTrip").click(function (){
 		//alert('Hi.\n\r');		
