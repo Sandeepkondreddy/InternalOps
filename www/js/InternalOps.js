@@ -434,7 +434,7 @@ function uploadOfflineData() // Function For Retrive data from Offline Database 
 							document.getElementById('lblmessage').innerHTML = dataset.length+':Trip Uploaded Successfully.!';
 						    //deleteRecord(item['Id']);
 							//deleteOfflineRecords();
-							uploadstatus=1;
+							//uploadstatus=1;
 						},
 						error: function (xhr, status, error) {
                     		document.getElementById('lblmessage').innerHTML ='Error occurred while Uploading the data.!';
@@ -590,15 +590,15 @@ $(document).ready(function () {
 		showOfflineRecordsCount(); 
 		if(offlinedatacount!=0){
 		uploadOfflineData();showOfflineRecordsCount();
-			if(uploadstatus==1)SaveTaskEndDetails();
+			if(offlinedatacount==0)SaveTaskEndDetails();
 		}
 		else {
 			SaveTaskEndDetails();
 			
 		}
 		var endbtn = document.getElementById("btnEndTrip"); endbtn.disabled = true;
-			var startbtn = document.getElementById("btnStartTrip"); startbtn.disabled = false;	
-			var taskclosebtn = document.getElementById("btnEndTask"); taskclosebtn.disabled = true;
+		var startbtn = document.getElementById("btnStartTrip"); startbtn.disabled = false;	
+		var taskclosebtn = document.getElementById("btnEndTask"); taskclosebtn.disabled = true;
 		//document.getElementById("chkboxComplete").checked = false;
 		//var taskclosecheckbox = document.getElementById("chkboxComplete"); taskclosecheckbox.disabled = false;
 		
