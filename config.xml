@@ -61,7 +61,7 @@
     <icon src="www/res/icon/ios/KyTe-72.png" gap:platform="ios" width="72" height="72"/>
     <icon src="www/res/icon/ios/KyTe-57-2x.png" gap:platform="ios" width="114" height="114"/>
     <icon src="www/res/icon/ios/KyTe-72-2x.png" gap:platform="ios" width="144" height="144"/>
-    <icon src="www/res/icon/webos/icon-64.png" gap:platform="webos"/>
+    <icon src="www/res/icon/webos/KyTe-64.png" gap:platform="webos"/>
     <icon src="www/res/icon/windows-phone/icon-48.png" gap:platform="winphone"/>
     <icon src="www/res/icon/windows-phone/icon-173-tile.png" gap:platform="winphone" gap:role="background"/>
     <gap:splash src="www/res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi"/>
