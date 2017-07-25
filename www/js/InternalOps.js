@@ -222,8 +222,7 @@ function SaveTaskEndDetails(){
 					document.getElementById('lblmessage').innerHTML ='Error occurred while saving the data.';
                     
                 }
-            });
-	
+            });	
 }
 
 function SaveBreakdownDetails(){debugger;
