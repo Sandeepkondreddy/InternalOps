@@ -462,7 +462,7 @@ function uploadOfflineData() // Function For Retrive data from Offline Database 
  function deleteRecord(id) // Get id of record . Function Call when Delete Button Click..
 {
      var iddelete = id.toString();
-     db.transaction(function (tx) { tx.executeSql(deleteStatement, [id], DeleteSuccessMessage, onError); document.getElementById('lblmessage').innerHTML = id+':Trip Deleted Successfully.!';});
+     db.transaction(function (tx) { tx.executeSql(deleteStatement, [id], DeleteSuccessMessage, onError); //document.getElementById('lblmessage').innerHTML = id+':Trip Deleted Successfully.!';});
  }
  function DeleteSuccessMessage()
  {
