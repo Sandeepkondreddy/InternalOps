@@ -352,7 +352,7 @@ function onError(tx, error) // Function for Hendeling Error...
 }
  
 function showRecords() // Function For Retrive data from Database Display records as list
-{debugger;
+{
     //$("#results").html('')
      db.transaction(function (tx) {
          tx.executeSql(selectAllStatement, [], function (tx, result) {
