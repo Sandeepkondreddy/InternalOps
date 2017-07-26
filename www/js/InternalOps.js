@@ -366,7 +366,7 @@ function showRecords() // Function For Retrive data from Database Display record
 var offlinedatacount=0; 
 function showOfflineRecordsCount() // Function For Retrive data from Database Display records count
 {
-    //$("#results").html('')
+    
      db.transaction(function (tx) {
          tx.executeSql(selectAllStatement, [], function (tx, result) {
              dataset = result.rows;
