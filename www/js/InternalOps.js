@@ -214,7 +214,7 @@ function SaveTaskEndDetails(){
 					$("#txtSubTaskCode").val("");
 					$("#txtSourceLoc").val("");
 					$("#txtDestinationLoc").val("");					
-                    //alert('Data Saved Successfully.');
+                    var taskclosebtn = document.getElementById("btnEndTask"); taskclosebtn.disabled = true;
 					document.getElementById('lblmessage').innerHTML = 'Task Closed Successfully.!';					
                 },
                 error: function (xhr, status, error) {
@@ -590,11 +590,11 @@ $(document).ready(function () {
 		showOfflineRecordsCount(); 
 		if(offlinedatacount!=0){
 		uploadOfflineData();showOfflineRecordsCount();
-			if(offlinedatacount==0){SaveTaskEndDetails();taskclosebtn.disabled = true;}
+			if(offlinedatacount==0){SaveTaskEndDetails();}
 		}
 		else {
 			SaveTaskEndDetails();
-			taskclosebtn.disabled = true;
+			
 		}
 		var endbtn = document.getElementById("btnEndTrip"); endbtn.disabled = true;
 		var startbtn = document.getElementById("btnStartTrip"); startbtn.disabled = false;	
