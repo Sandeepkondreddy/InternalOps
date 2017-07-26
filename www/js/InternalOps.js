@@ -512,8 +512,7 @@ $(document).ready(function () {
 		var taskclosebtn = document.getElementById("btnEndTask"); taskclosebtn.disabled = true;		
 		var options = {frequency: 3000, enableHighAccuracy: true};
 		navigator.geolocation.watchPosition(onSuccess, onError, options);	
-		//alert('IMEI No:'+	document.getElementById('hidIMEI').value);
-		//alert('Location:'+	document.getElementById('geolocation').innerHTML);
+		
 		var taskcode = document.getElementById("txtTaskCode").value;
 		var task = 1;
 		if(taskcode=='')
