@@ -431,10 +431,7 @@ function uploadOfflineData() // Function For Retrive data from Offline Database 
 						uploadcount++; 
 						
              }
-			// if(uploadcount==dataset.length)
-			// {
-			//	 deleteOfflineRecords();
-			// }
+			
          });
      });
  }
