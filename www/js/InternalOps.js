@@ -575,7 +575,8 @@ $(document).ready(function () {
 		showOfflineRecordsCount(); 
 		if(offlinedatacount!=0){
 		uploadOfflineData();showOfflineRecordsCount();
-			if(offlinedatacount==0){SaveTaskEndDetails();}
+			//if(offlinedatacount==0){SaveTaskEndDetails();}
+			SaveTaskEndDetails();
 		}
 		else {
 			SaveTaskEndDetails();			
