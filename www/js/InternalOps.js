@@ -590,15 +590,15 @@ $(document).ready(function () {
 		showOfflineRecordsCount(); 
 		if(offlinedatacount!=0){
 		uploadOfflineData();showOfflineRecordsCount();
-			if(offlinedatacount==0)SaveTaskEndDetails();
+			if(offlinedatacount==0){SaveTaskEndDetails();taskclosebtn.disabled = true;}
 		}
 		else {
 			SaveTaskEndDetails();
-			
+			taskclosebtn.disabled = true;
 		}
 		var endbtn = document.getElementById("btnEndTrip"); endbtn.disabled = true;
 		var startbtn = document.getElementById("btnStartTrip"); startbtn.disabled = false;	
-		var taskclosebtn = document.getElementById("btnEndTask"); taskclosebtn.disabled = true;
+		
 		//document.getElementById("chkboxComplete").checked = false;
 		//var taskclosecheckbox = document.getElementById("chkboxComplete"); taskclosecheckbox.disabled = false;
 		
