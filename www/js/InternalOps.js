@@ -166,7 +166,7 @@ function SaveTripStartDetails(){
 }
 
 function SaveTripEndDetails(){
-	//alert('Save: Trip End');
+
 	document.getElementById('lblmessage').innerHTML = 'Save Trip End..!';
 	var Adddata = {};
             Adddata.TaskCode = $("#txtTaskCode").val();
