@@ -421,7 +421,7 @@ function uploadOfflineData() // Function For Retrive data from Offline Database 
 							document.getElementById('lblmessage').innerHTML = dataset.length+':Trip Uploaded Successfully.!';
 						    //deleteRecord(item['Id']);
 							//deleteOfflineRecords();
-							//uploadstatus=1;
+							
 						},
 						error: function (xhr, status, error) {
                     		document.getElementById('lblmessage').innerHTML ='Error occurred while Uploading the data.!';
