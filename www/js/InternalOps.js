@@ -385,11 +385,11 @@ function showOfflineRecordsCount() // Function For Retrive data from Database Di
              dataset = result.rows;
 			 if(dataset.length==0)
 			 {				 
-				 document.getElementById('lblmessage').innerHTML = 'Offline Data Not Available.!';
+				 //document.getElementById('lblmessage').innerHTML = 'Offline Data Not Available.!';
 				 offlinedatacount=0;
 			 }
 			 else{
-				 document.getElementById('lblmessage').innerHTML = dataset.length+ ' Records Offline Data Available.!';
+				 document.getElementById('lblmessage').innerHTML = dataset.length+ ' Records of Offline Data Available.!';
 				 offlinedatacount=dataset.length;
 			 }
          });
