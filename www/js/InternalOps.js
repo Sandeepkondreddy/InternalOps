@@ -565,7 +565,7 @@ $(document).ready(function () {
 	});
 	
 	$("#btnEndTask").click(function (){
-		//alert('Hi 2.\n\r');
+		
 		$("#loading").show();
 		var startbtn = document.getElementById("btnStartTrip"); startbtn.disabled = true;		
 		debugger;
