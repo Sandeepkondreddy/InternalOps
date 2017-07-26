@@ -297,8 +297,8 @@ function initDatabase()  // Function Call When Page is ready.
 
 
 function createTable()  // Function for Create Table in SQLite.
-{
-	deleteOfflineRecords();
+{debugger;
+	db.transaction(function (tx) { tx.executeSql(dropStatement, [], TableCeationMessage, onError); });
     db.transaction(function (tx) { tx.executeSql(createStatement, [], TableCeationMessage, onError); });
 	
 }
@@ -383,8 +383,8 @@ function showOfflineRecordsCount() // Function For Retrive data from Database Di
      });
  }
 
-var uploadcount=0; 
-var uploadstatus=0;
+//var uploadcount=0; 
+//var uploadstatus=0;
 function uploadOfflineData() // Function For Retrive data from Offline Database and push the data to Server
 {
      db.transaction(function (tx) {
@@ -425,10 +425,10 @@ function uploadOfflineData() // Function For Retrive data from Offline Database 
 						},
 						error: function (xhr, status, error) {
                     		document.getElementById('lblmessage').innerHTML ='Error occurred while Uploading the data.!';
-							uploadstatus=0;
+							//uploadstatus=0;
 						}
 						});
-						uploadcount++; 
+						//uploadcount++; 
 						
              }
 			
