@@ -298,13 +298,7 @@ function initDatabase()  // Function Call When Page is ready.
 
 function createTable()  // Function for Create Table in SQLite.
 {
-	//var currentdate = new Date();
-	//var CreatedTimeTemp =currentdate.getDate() + "/"
-     //          + (currentdate.getMonth()+1)  + "/" 
-     //          + currentdate.getFullYear() + " "  
-     //          + currentdate.getHours() + ":"  
-     //          + currentdate.getMinutes() + ":" 
-     //          + currentdate.getSeconds();
+
     db.transaction(function (tx) { tx.executeSql(createStatement, [], TableCeationMessage, onError); });
 	
 }
