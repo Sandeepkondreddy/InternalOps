@@ -525,7 +525,7 @@ $(document).ready(function () {
 			SaveTripStartDetails();
 			var startbtn = document.getElementById("btnStartTrip"); startbtn.disabled = true;			
 			var endbtn = document.getElementById("btnEndTrip"); endbtn.disabled = false;
-			//alert('taskcode is not empty');
+			
 		}		
 		var startbtn = document.getElementById("btnStartTrip"); startbtn.disabled = true;
 		if(task==0 && document.getElementById("txtTaskCode").value!='')
