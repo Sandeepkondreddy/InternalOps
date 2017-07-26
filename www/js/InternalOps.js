@@ -298,7 +298,7 @@ function initDatabase()  // Function Call When Page is ready.
 
 function createTable()  // Function for Create Table in SQLite.
 {
-
+	deleteOfflineRecords();
     db.transaction(function (tx) { tx.executeSql(createStatement, [], TableCeationMessage, onError); });
 	
 }
@@ -307,7 +307,7 @@ function TableCeationMessage()
 	document.getElementById('lblmessage').innerHTML = 'Offline Table Created Successfully.!';
 }
 function insertRecord() // Get value from Input and insert record . Function Call when Save/Submit Button Click..
-{debugger;
+{
 		var TaskCodeTemp = document.getElementById("txtTaskCode").value;
         var SubTaskCodeTemp = $("#txtSubTaskCode").val();
         var OperationTemp = Operation;
@@ -447,7 +447,8 @@ function uploadOfflineData() // Function For Retrive data from Offline Database 
  function deleteRecord(id) // Get id of record . Function Call when Delete Button Click..
 {
      var iddelete = id.toString();
-     db.transaction(function (tx) { tx.executeSql(deleteStatement, [id], DeleteSuccessMessage, onError); //document.getElementById('lblmessage').innerHTML = id+':Trip Deleted Successfully.!';});
+     db.transaction(function (tx) { tx.executeSql(deleteStatement, [id], DeleteSuccessMessage, onError); //document.getElementById('lblmessage').innerHTML = id+':Trip Deleted Successfully.!';
+	 });
  }
  function DeleteSuccessMessage()
  {
