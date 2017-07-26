@@ -593,8 +593,7 @@ $(document).ready(function () {
 			if(offlinedatacount==0){SaveTaskEndDetails();}
 		}
 		else {
-			SaveTaskEndDetails();
-			
+			SaveTaskEndDetails();			
 		}
 		var endbtn = document.getElementById("btnEndTrip"); endbtn.disabled = true;
 		var startbtn = document.getElementById("btnStartTrip"); startbtn.disabled = false;	
