@@ -316,16 +316,9 @@ function insertRecord() // Get value from Input and insert record . Function Cal
 		var GeoCoordinatesTemp = document.getElementById('geolocation').innerHTML;
 		if(GeoCoordinatesTemp=='Finding geolocation...')GeoCoordinatesTemp = document.getElementById('geolocation').innerHTML;
 		var currentdate = new Date(); 
-		//alert(currentdate.toLocaleString()); 
-		//alert(currentdate.getTime());
-		var CreatedTimeTemp =getDateTime();
-		//currentdate.getFullYear() + "-"
-        //      + (currentdate.getMonth()+1)  + "-" 
-        //      + currentdate.getDate() + " "  
-        //      + currentdate.getHours() + ":"  
-        //      + currentdate.getMinutes() + ":" 
-        //      + currentdate.getSeconds();
 
+		var CreatedTimeTemp =getDateTime();
+		
 		var CreatedByTemp=$("#hidusrid").val();
         db.transaction(function (tx) { tx.executeSql(insertStatement, [TaskCodeTemp, SubTaskCodeTemp, OperationTemp, LocationTemp, IMEITemp, GeoCoordinatesTemp, CreatedTimeTemp, CreatedByTemp], loadAndReset, onError); });
 		
