@@ -298,7 +298,7 @@ function initDatabase()  // Function Call When Page is ready.
 
 function createTable()  // Function for Create Table in SQLite.
 {debugger;
-	db.transaction(function (tx) { tx.executeSql(dropStatement, [], TableCeationMessage, onError); });
+	//db.transaction(function (tx) { tx.executeSql(dropStatement, [], TableCeationMessage, onError); });
     db.transaction(function (tx) { tx.executeSql(createStatement, [], TableCeationMessage, onError); });
 	
 }
